@@ -1,5 +1,9 @@
 package com.vivi.mymovieproject.repositories;
 
-public class MovieRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.vivi.mymovieproject.entities.Movie;
+
+public interface MovieRepository extends JpaRepository<Movie, Integer> {
 
 }
